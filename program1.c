@@ -17,6 +17,8 @@ struct node
 	node * next;
 };
 
+//merge function takes in two perameters that point to a sorted list and returns a new head pointer that points to
+//the merged list
 node * merge(node* left, node * right)
 {
 	node* tracer = NULL;
@@ -54,6 +56,7 @@ node * merge(node* left, node * right)
 	return left;
 }
 
+//utilizes the merge function and recursion to sort the list
 node * mergeSort(node * left , int len)
 {
 	if(len>1)
